@@ -1,0 +1,330 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#b06d42;
+}
+
+/* =========================
+   HOME
+========================= */
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+    min-height:100vh;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:60px;
+    margin-top:10px;
+}
+
+.left span{
+    color:#b06d42;
+}
+
+.left h3{
+    margin-top:20px;
+}
+
+.left h4{
+    margin-top:10px;
+    color:#555;
+}
+
+.left p{
+    margin-top:20px;
+    line-height:1.7;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 28px;
+    border:none;
+    background:#b06d42;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#8d5632;
+}
+
+.right img{
+    width:350px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section{
+    padding:80px 100px;
+}
+
+section h1,
+.section-title{
+    font-size:40px;
+    color:#b06d42;
+    margin-bottom:20px;
+}
+
+section p{
+    font-size:18px;
+    line-height:30px;
+    color:#333;
+}
+
+/* =========================
+   ABOUT GALLERY
+========================= */
+.about-gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:40px;
+}
+
+.about-gallery img{
+    width:240px;
+    height:240px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.about-gallery img:hover{
+    transform:scale(1.05);
+}
+
+.gallery-item{
+    text-align:center;
+    width:220px;
+}
+
+.gallery-item p{
+    margin-top:10px;
+    font-size:15px;
+    color:#333;
+    line-height:1.5;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+#education p{
+    margin-top:12px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.projects{
+    background:#f5f5f5;
+}
+
+.projects-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.project-card{
+    width:400px;
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.project-content p{
+    color:#d1d5db;
+    line-height:1.7;
+    font-size:15px;
+}
+
+.tech-stack{
+    margin-top:20px;
+}
+
+.tech-stack span{
+    display:inline-block;
+    margin:5px;
+    padding:8px 15px;
+    background:#38bdf8;
+    color:#000;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* =========================
+   SKILLS
+========================= */
+#skills ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    list-style:none;
+    margin-top:20px;
+}
+
+#skills li{
+    background:#b06d42;
+    color:white;
+    padding:12px 20px;
+    border-radius:25px;
+    transition:0.3s;
+}
+
+#skills li:hover{
+    background:#8d5632;
+}
+
+/* =========================
+   CONTACT
+========================= */
+#contact a{
+    color:#b06d42;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:10px;
+    display:inline-block;
+}
+
+.home{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.left{
+    width:100%;
+}
+
+.left h1{
+    font-size:42px;
+}
+
+.right img{
+    width:260px;
+    margin-bottom:30px;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.section-title{
+    font-size:34px;
+}
+
+.project-card{
+    width:100%;
+}
+
+.about-gallery img{
+    width:160px;
+    height:160px;
+}
+
+}
